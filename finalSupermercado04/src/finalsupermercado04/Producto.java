@@ -10,8 +10,8 @@ package finalsupermercado04;
  */
 public class Producto {
         private String codigo; // codigo del producto
-    private int precio; // precio del producto
-    private int cantidad; // cantidad del producto
+        private int precio; // precio del producto
+        private int cantidad; // cantidad del producto
 
     public Producto(String codigo, int precio, int cantidad) { // constructor con parametros del producto
         this.codigo = codigo;
