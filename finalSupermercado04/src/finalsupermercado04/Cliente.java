@@ -61,9 +61,9 @@ public class Cliente {
         this.esSocio = esSocio;
     }
     
-//    public boolean ingresarProducto(Producto producto){
-//        canasta.push(producto);
-//        return true;
-//    }
+    public boolean ingresarProducto(Producto producto){
+        canasta.push(producto);
+        return true;
+    }
 
 }
