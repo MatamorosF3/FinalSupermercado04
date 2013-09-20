@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author Francisco Matamoros & Swammy
+ * @author Francisco Matamoros & Swammy Jose
  */
-public class Main1FinalSupermercado04 {
+public class Main1 {
 
     /**
      * @param args the command line arguments
@@ -21,6 +21,7 @@ public class Main1FinalSupermercado04 {
 
 
         Supermercado supermercado = new Supermercado();
+        TDAList id1 = new LinkedList();
         Scanner c;
         c = new Scanner(System.in);
         String nombre;
@@ -42,9 +43,24 @@ public class Main1FinalSupermercado04 {
                 System.out.println("Ingrese su apellido");
                 c = new Scanner(System.in);
                 apellido = c.nextLine();
-                System.out.println("Ingrese su ID");
-                c = new Scanner(System.in);
-                id = c.nextLine();
+                do {
+                    System.out.println("Ingrese su ID");
+                    c = new Scanner(System.in);
+                    id = c.nextLine();
+
+                    if (id1.indexOf(id) != -1) {
+                        f = true;
+
+                    } else {
+                        f = false;
+                        id1.insert(id, id1.size);
+                    }
+                    if (f) {
+                        System.out.println("Id ya ha sido ingresado");
+                    }
+                } while (f);
+
+
                 do {
 
                     System.out.println("Ingrese edad");
@@ -59,7 +75,7 @@ public class Main1FinalSupermercado04 {
                         }
                     }
                     if (f) {
-                        System.out.println("Ingrese una edad correcta");
+                        System.out.println("Edad incorrecta");
                     }
                 } while (f);
 

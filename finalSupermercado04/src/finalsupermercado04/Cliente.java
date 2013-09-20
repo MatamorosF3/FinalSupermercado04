@@ -6,7 +6,7 @@ package finalsupermercado04;
 
 /**
  *
- * @author Swammy Jose
+ * @author Swammy Jose & Francisco Matamoros
  */
 public class Cliente {
     
