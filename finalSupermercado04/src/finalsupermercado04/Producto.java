@@ -42,5 +42,13 @@ public class Producto {
     public void setCantidad(int cantidad) { // metodo para cambiar la cantidad
         this.cantidad = cantidad;
     }
+      public String getInfo() { // metodo utilizado para obtener la informacion del producto
+        return this.codigo + " [$" + this.precio + "] " + this.cantidad + " unidades";
+    }
+      
+    @Override
+    public String toString() { // metodo toString, mensaje el cual se mostrara cuando mandemos a imprimir un producto
+        return "Producto{" + "codigo=" + codigo + ", cantidad=" + cantidad + ", precio=" + precio + '}';
+    }
 
 }
